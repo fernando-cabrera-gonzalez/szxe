@@ -1,0 +1,2 @@
+# szxe
+Simple ZX Emulator
