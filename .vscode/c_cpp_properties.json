@@ -1,0 +1,28 @@
+// IMPORTANT: Define the SDL2_HOME environment variable so IntelliSense can find the SDL2 headers.
+// Example in Windows CMD: set SDL2_HOME=D:\sdl2
+
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:SDL2_INC}"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "compilerArgs": [
+                "-I${env:SDL2_INC}"
+            ]
+        }
+    ],
+    "version": 4
+}

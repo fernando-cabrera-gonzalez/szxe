@@ -1,0 +1,11 @@
+# IMPORTANT: Define SDL2_INC and SDL2_LIB environment variables before building.
+
+# Example for Linux bash: export SDL2_INC="/usr/include/SDL2"
+#                         export SDL2_LIB="/usr/lib/x86_64-linux-gnu"
+
+CC 		= gcc
+CFLAGS 	= -g -Iinc -I$(SDL2_INC) -lSDL2main -lSDL2 -lz80emu -L$(SDL2_LIB) -Llib -Wall -Werror
+SOURCES = $(wildcard ./src/*.c)
+
+szxe: ./src/main.c $(SOURCES)
+	$(CC) $^ $(CFLAGS) -o $@

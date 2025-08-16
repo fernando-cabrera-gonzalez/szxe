@@ -1,0 +1,76 @@
+// IMPORTANT: Define SDL2_INC and SDL2_LIB environment variables before building.
+
+// Example for Windows CMD: set SDL2_INC=c\sdl2\include\sdl2
+//                          set SDL2_LIB=c:\sdl2\lib
+
+// Example for Linux bash: export SDL2_INC="/usr/include/SDL2"
+//                         export SDL2_LIB="/usr/lib/x86_64-linux-gnu"
+
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build ZX emulator Windows",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "src/main.c",
+                "src/zx_bpr.c",
+                "src/zx_key.c",
+                "src/zx_mem.c",
+                "src/zx_rnd.c",
+                "src/zx_ula.c",
+                "-I${env:SDL2_INC}",
+                "-Iinc",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2",
+                "-lz80emu",
+                "-L${env:SDL2_LIB}",
+                "-Llib/windows",
+                "-o",
+                "szxe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build szxe for Windows."
+        },        
+        {
+            "type": "cppbuild",
+            "label": "Build ZX emulator Linux",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "src/main.c",
+                "src/zx_bpr.c",
+                "src/zx_key.c",
+                "src/zx_mem.c",
+                "src/zx_rnd.c",
+                "src/zx_ula.c",
+                "-I${env:SDL2_INC}",
+                "-Iinc",
+                "-lSDL2main",
+                "-lSDL2",
+                "-lz80emu",
+                "-L${env:SDL2_LIB}",
+                "-L./lib/linux",
+                "-o",
+                "szxe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Build szxe for Linux."
+        }
+    ],
+    "version": "2.0.0"
+}
