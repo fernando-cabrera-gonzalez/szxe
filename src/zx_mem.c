@@ -1,3 +1,12 @@
+/*
+ * zx_mem.c - Memory Management
+ * 
+ * This file implements memory allocation, read, write, and cleanup functions
+ * for the ZX emulator. It provides a simple memory model for the emulated system.
+ * This module also handles memory contention between the Z80 CPU and the ULA.
+ * 
+ */
+
 #include <malloc.h>
 #include <stdint.h>
 #include <stdio.h>

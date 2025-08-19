@@ -1,3 +1,10 @@
+/*
+ * zx_bpr.h - Beeper Interface
+ * 
+ * Contains declarations for the beeper (audio) subsystem of the ZX Spectrum emulator.
+ * Defines types, external variables, and function prototypes for audio handling.
+ */
+
 #ifndef BPR_H
 #define BPR_H
 

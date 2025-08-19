@@ -1,3 +1,10 @@
+/*
+ * zx_ula.c - ULA Implementation
+ *
+ * Implements the ULA (Uncommitted Logic Array) emulation for the ZX Spectrum.
+ * Handles video timing, screen drawing, border effects, and port I/O.
+ */
+
 #include <SDL.h>
 #include <stdbool.h>
 #include <stdint.h>

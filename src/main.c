@@ -1,3 +1,10 @@
+/*
+ * main.c - Main Entry Point
+ *
+ * Entry point and main initialization routines for the ZX Spectrum emulator.
+ * Sets up memory, random number generator, Z80 CPU, ULA, and beeper.
+ */
+
 #include <SDL.h>
 #include <stdbool.h>
 #include <stdint.h>

@@ -1,3 +1,10 @@
+/*
+ * zx_bpr.c - Beeper Implementation
+ *
+ * Implements the beeper (audio) functionality for the ZX Spectrum emulator.
+ * Handles audio buffer, pulse generation, and SDL audio device management.
+ */
+
 #include <SDL.h>
 #include <stdbool.h>
 #include <stdint.h>

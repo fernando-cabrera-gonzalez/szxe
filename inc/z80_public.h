@@ -1,3 +1,9 @@
+/*
+ * z80_public.h - Public Interface
+ *
+ * Declares public types, constants, and function pointers for memory, I/O, and rendering integration.
+ */
+
 #ifndef Z80_PUBLIC_H
 #define Z80_PUBLIC_H
 

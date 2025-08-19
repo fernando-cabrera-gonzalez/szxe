@@ -1,3 +1,10 @@
+/*
+ * zx_mem.h - Memory Interface
+ *
+ * Contains declarations for memory management in the ZX Spectrum emulator.
+ * Defines memory size, external variables, and function prototypes for RAM operations.
+ */
+
 #ifndef MEM_H
 #define MEM_H
 

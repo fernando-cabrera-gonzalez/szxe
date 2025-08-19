@@ -1,3 +1,10 @@
+/*
+ * zx_rnd.c - Renderer Management
+*
+ * Handles rendering and display output for the ZX Spectrum emulator.
+ * Manages SDL window, renderer, texture, and pixel drawing routines.
+ */
+
 #include <stdio.h>
 
 #include "zx_rnd.h"

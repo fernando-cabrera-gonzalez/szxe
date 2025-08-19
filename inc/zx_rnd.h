@@ -1,3 +1,10 @@
+/*
+ * zx_rnd.h - Renderer Interface
+ *
+ * Contains declarations for rendering and display output in the ZX Spectrum emulator.
+ * Defines screen dimensions, palette, and function prototypes for SDL-based rendering.
+ */
+
 #ifndef RND_H
 #define RND_H
 

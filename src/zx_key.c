@@ -1,3 +1,10 @@
+/*
+ * zx_key.c - Keyboard Management
+ *
+ * Handles keyboard input for the ZX Spectrum emulator.
+ * Maps SDL keyboard events to ZX Spectrum key matrix and triggers debug mode.
+ */
+
 #include <SDL.h>
 
 #include "z80_public.h"

@@ -1,3 +1,10 @@
+/*
+ * zx_ula.h - ULA Interface
+ *
+ * Contains declarations for the ULA (Uncommitted Logic Array) emulation in the ZX Spectrum emulator.
+ * Defines timing constants, key mapping structure, and function prototypes for ULA operations.
+ */
+
 #ifndef ULA_H
 #define ULA_H
 
